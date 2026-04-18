@@ -2,6 +2,11 @@
 Controls a tank in the CodeQuest 2023 Hackathon game. For more information about the hackathon see https://codequest.club
 
 
+## Bot Strategies
+- The bot will look for enemy projectiles and attempt to move to avoid them. The code for this can be found in src/futureSight.py
+- The bot will shoot at the enemy tank if they are in line of sight. It aims by using their current velocity and the velocity of the bullet to predict an angle that will hit the target. The code for this can be found in src/shootinAlgorithm.py
+
+
 ## Running the bot
 The bot can be built as a Docker image using the included Dockerfile.
 ```docker build -t tankTrouble .```
